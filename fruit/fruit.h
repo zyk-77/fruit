@@ -19,13 +19,17 @@ public:
     void paintEvent(QPaintEvent *event);
     void keyPressEvent(QKeyEvent *event);
     void initiative();
+    void judge();
+private slots:
     void supdate();
+    void subdate();
 
 
 private:
     Ui::Fruit *ui;
-    int fx;
-    QVector<QRect> kind;//水果种类
+    int fx;//果篮方向
+    QVector<QRect> fruit;//天上的水果
+    QVector<int> kind;//水果的种类
     QRect x;//果篮
     QTimer *timer,*t;//定时器
     bool blsRun;//是否开始

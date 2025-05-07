@@ -105,7 +105,11 @@ compiler_rcc_clean:
 debug/qrc_picture.cpp: ../../picture.qrc \
 		D:/LENOVO/Qt/6.8.2/mingw_64/bin/rcc.exe \
 		../../1/2.png \
-		../../1/3.png
+		../../1/3.png \
+		../../1/4.png \
+		../../1/7.png \
+		../../1/6.png \
+		../../1/5.png
 	D:\LENOVO\Qt\6.8.2\mingw_64\bin\rcc.exe -name picture --no-zstd ..\..\picture.qrc -o debug\qrc_picture.cpp
 
 compiler_moc_predefs_make_all: debug/moc_predefs.h
