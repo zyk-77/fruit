@@ -144,3 +144,4 @@ Fruit::~Fruit()
 {
     delete ui;
 }
+
